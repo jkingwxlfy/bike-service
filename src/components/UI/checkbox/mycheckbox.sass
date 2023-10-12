@@ -1,0 +1,31 @@
+.custom-checkbox
+	display: inline-block
+	width: 25px
+	height: 25px
+	background-color: #fff
+	border: 2px solid #c9a6ed
+	border-radius: 4px
+	vertical-align: sub
+	position: relative
+	&:before
+		content: ""
+		display: inline-block
+		width: 20px
+		height: 20px
+		position: absolute
+		left: 50%
+		top: 60%
+		transform: translate(-50%, -50%) scale(0)
+		transition: 0.1s ease-in
+		background-image: url("https://img.freepik.com/premium-psd/right-correct-purple-icon-3d_568120-1044.jpg?w=2000")
+		background-size: contain
+		background-repeat: no-repeat
+
+.real-checkbox:checked + .custom-checkbox::before
+	transform: translate(-50%, -50%) scale(1)
+.real-checkbox
+	width: 0
+	height: 0
+	position: absolute
+	opacity: 0
+	z-index: -1

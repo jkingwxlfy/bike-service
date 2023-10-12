@@ -1,0 +1,54 @@
+.header
+    position: sticky
+    top: 0
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr
+    height: 60px
+    background-color: #000
+    z-index: 1
+    &_wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+    &_link
+        color: #fff
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0 10px
+        margin: 0 25px
+        font-size: 19px
+        font-weight: 500
+        cursor: pointer
+        user-select: none
+        text-decoration: none
+        transition: 0.3s all
+        &:hover
+            color: #a17dc6
+        &.active
+            color: #a17dc6
+            border-bottom: 1px solid #a17dc6
+
+
+@media (min-width: 768px) and (max-width: 991px)
+    .header
+        height: 50px
+        &_link
+            margin: 0 5px
+            font-size: 12px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+    .header
+        &_link
+            font-size: 10px
+            padding: 0
+            margin: 0 5px
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .header
+        &_link
+            margin: 0 5px
+            font-size: 16px

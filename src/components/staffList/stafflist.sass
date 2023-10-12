@@ -1,0 +1,87 @@
+.staff-list
+	display: grid
+	grid-auto-rows: minmax(100px, auto)
+	padding-top: 30px
+	grid-gap: 30px
+	&_container
+		width: 1140px
+		margin: 0 auto
+		padding-top: 100px
+		h1
+			color: #fff
+			text-align: center
+	&_spinner
+		justify-self: center
+		align-self: center
+	&_link
+		display: flex
+		justify-content: center
+		align-items: center
+	&_title
+		text-align: center
+		color: #fff
+	&_item
+		display: flex
+		justify-content: space-around
+		align-items: center
+		border-radius: 12px
+		border: 1px solid #c9a6ed
+		color: #fff
+		font-size: 20px
+		padding: 10px 0
+	&_field
+		display: flex
+		flex-direction: column
+		align-items: center
+		&.email
+			width: 300px
+	&_name
+		color: #c9a6ed
+		padding-bottom: 15px
+	&_buttons
+		display: flex
+		flex-direction: column
+
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.staff-list
+		&_container
+			width: 100%
+		&_item
+			font-size: 18px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.staff-list
+		display: grid
+		grid-gap: 10px
+		&_container
+			padding: 0
+			width: 100%
+			margin: 0 auto
+			h1
+				color: #fff
+				text-align: center
+		&_name
+			padding: 0
+		&_item
+			display: grid
+			border-radius: 12px
+			border: 1px solid #c9a6ed
+			color: #fff
+			font-size: 16px
+		&_field
+			height: 50px
+			&.email
+				width: auto
+		&_buttons
+			display: flex
+			justify-content: center
+			align-items: center
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.staff-list
+		&_container
+			width: 100%

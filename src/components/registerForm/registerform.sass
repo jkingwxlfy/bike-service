@@ -1,0 +1,62 @@
+.register-form
+    width: 400px
+    color: #fff
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &_error
+        color: #f83c3c
+        padding-bottom: 15px
+    &_field
+        font-size: 20px
+        padding: 5px
+    &_wrapper
+        display: grid
+        grid-template-columns: repeat(2, auto)
+        grid-template-rows: repeat(3, auto)
+        grid-gap: 15px
+        margin-bottom: 20px
+    &_email
+        grid-column-start: 1
+        grid-column-end: 3
+    &_password
+        grid-column-start: 1
+        grid-column-end: 3
+    &_id
+        grid-row-start: 3
+        grid-column-start: 1
+        grid-column-end: 3
+    &_select
+        position: relative
+
+.type_field
+    position: absolute
+    top: 0
+    left: 0
+    user-select: none
+
+
+@media (min-width: 768px) and (max-width: 991px)
+    .my-input
+        font-size: 16px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+    .form_error
+        font-size: 12px
+        padding: 0
+    .register-form
+        width: 200px
+        color: #fff
+        &_error
+            font-size: 14px
+            padding-bottom: 15px
+        &_field
+            font-size: 16px
+            padding: 5px
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .my-input
+        font-size: 16px

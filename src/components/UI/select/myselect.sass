@@ -1,0 +1,35 @@
+.my-select
+	position: relative
+	width: 100%
+	select
+		width: 100%
+		font-size: 20px
+		padding: 10px 10px 10px 15px
+		border-radius: 5px
+		-webkit-appearance: none
+		appearance: none
+		&:focus
+			outline: none
+			border: 1px solid #a17dc6
+	&:after
+		content: ""
+		display: block
+		border-style: solid
+		border-color: #000 transparent transparent transparent
+		border-width: 10px 5px 0 5px
+		position: absolute
+		top: 50%
+		right: 1rem
+		margin-top: -3px
+		pointer-events: none
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.form_error
+		font-size: 14px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.my-select
+		select
+			font-size: 12px

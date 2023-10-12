@@ -1,0 +1,66 @@
+.container
+	width: 1140px
+	margin: 0 auto
+	padding-top: 100px
+.wrapper
+	margin: 15px 0
+	width: 100%
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	grid-auto-rows: minmax(100px, auto)
+	align-items: start
+	justify-items: stretch
+.link
+	text-decoration: none
+	color: #fff
+.item
+	margin: 10px 10px 10px 0
+	border: 1px solid #c9a6ed
+	border-radius: 12px
+	text-align: center
+	padding: 10px
+.name
+	font-size: 20px
+	padding-bottom: 10px
+	color: #c9a6ed
+.value
+	text-align: center
+	width: 100%
+	font-size: 20px
+	color: #fff
+	background-color: transparent
+	display: block
+	outline: none
+	border: 0
+	&:hover
+		color: rgb(27, 196, 228)
+.description
+	width: 100%
+	height: max-content
+.active
+	font-size: 20px
+	color: #cd46ff
+	padding-top: 15px
+.hidden
+	display: none
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.container
+		width: 100%
+	.wrapper
+		grid-template-columns: 1fr 1fr
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.container
+		width: 100%
+	.wrapper
+		grid-template-columns: 1fr
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.container
+		width: 100%
+	.wrapper
+		grid-template-columns: 1fr 1fr 1fr

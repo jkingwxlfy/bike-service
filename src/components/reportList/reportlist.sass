@@ -1,0 +1,94 @@
+.report-list
+	&_container
+		margin: 0 auto
+		width: 1140px
+		padding-top: 100px
+		color: #fff
+		text-align: center
+	&_empty
+		color: #fff
+		text-align: center
+		padding-top: 100px
+	&_wrapper
+		padding-top: 30px
+		display: grid
+		grid-gap: 30px
+		grid-auto-rows: minmax(100px, auto)
+	&_item
+		display: flex
+		justify-content: space-around
+		align-items: center
+		border: 1px solid #c9a6ed
+		padding: 10px 0
+		border-radius: 12px
+		&_link
+			text-decoration: none
+			color: #fff
+		&_buttons
+			display: flex
+			flex-direction: column
+		&_info
+			color: #c9a6ed
+			padding-bottom: 15px
+		&_one
+			width: max-content
+			min-width: 200px
+			padding: 10px 0
+			font-size: 18px
+		.fullname
+			width: 300px
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.report-list
+		&_container
+			width: 100%
+		&_item
+			&_one
+				width: max-content
+				min-width: auto
+				font-size: 12px
+			.fullname
+				width: 100px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.report-list
+		&_container
+			width: 100%
+		&_item
+			display: grid
+			&_buttons
+				display: block
+			&_link
+				width: 100%
+			&_info
+				padding: 0
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+			&_one
+				display: flex
+				justify-content: space-around
+				align-items: center
+				margin: 10px 0
+				width: 100%
+				height: 40px
+				font-size: 16px
+				padding: 15px
+			.fullname
+				width: auto
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.report-list
+		&_container
+			width: 100%
+		&_item
+			&_one
+				width: max-content
+				min-width: auto
+				font-size: 14px
+			.fullname
+				width: 100px

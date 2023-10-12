@@ -1,0 +1,19 @@
+.my-textarea
+	resize: none
+	width: 100%
+	border-radius: 12px
+	outline: none
+	border: 1px solid black
+	padding: 5px
+	font-size: 18px
+	max-height: 150px
+	&:focus
+		box-shadow: 0 0 10px 5px #733fa5
+	&::-webkit-scrollbar
+		width: 0
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.my-textarea
+		padding: 5px
+		font-size: 12px

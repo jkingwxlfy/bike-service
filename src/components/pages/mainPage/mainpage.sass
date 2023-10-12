@@ -1,0 +1,70 @@
+.main-page
+    min-height: 100vh
+    height: 100%
+    color: #fff
+    &_container
+        margin: 0 auto
+        width: 1140px
+        display: flex
+        align-items: center
+        flex-direction: column
+    &_title
+        padding-top: 100px
+        font-size: 32px
+    &_subtitle
+        padding-top: 20px
+        font-size: 20px
+    &_description
+        padding-top: 150px
+        text-align: center
+        line-height: 1.7em
+        width: 575px
+        font-size: 18px
+        span
+            font-size: 20px
+
+
+@media (min-width: 768px) and (max-width: 991px)
+    .main-page
+        &_container
+            width: 100%
+        &_title
+            font-size: 18px
+        &_subtitle
+            font-size: 14px
+        &_description
+            padding-top: 100px
+            font-size: 16px
+            span
+                font-size: 16px
+
+@media (min-width: 320px) and (max-width: 479px)
+    .main-page
+        &_container
+            width: 100%
+        &_title
+            padding-top: 70px
+            font-size: 16px
+        &_subtitle
+            font-size: 10px
+        &_description
+            font-size: 12px
+            width: 100%
+            padding: 100px 20px
+            span
+                font-size: 14px
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .main-page
+        &_container
+            width: 100%
+        &_title
+            font-size: 20px
+        &_subtitle
+            font-size: 14px
+        &_description
+            font-size: 14px
+            width: 100%
+            padding: 100px
+            span
+                font-size: 18px

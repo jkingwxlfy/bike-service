@@ -1,0 +1,73 @@
+.staff-page-item
+	&_container
+		width: 1140px
+		margin: 0 auto
+		padding-top: 100px
+		display: grid
+	&_wrapper
+		padding: 30px 0
+		display: grid
+		grid-gap: 20px
+	&_link
+		text-decoration: none
+		color: #fff
+		width: min-content
+	&_field
+		border-radius: 12px
+		border: 1px solid #c9a6ed
+		padding: 10px
+		display: flex
+		align-items: center
+	&_name
+		display: inline
+		color: #c9a6ed
+		cursor: default
+		font-size: 20px
+		margin-right: 15px
+		user-select: none
+	&_input
+		background-color: transparent
+		outline: none
+		border: 0
+		font-size: 20px
+		color: #fff
+		flex-grow: 1
+		&.active
+			&:hover
+				color: rgb(27, 196, 228)
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.staff-page-item
+		&_container
+			width: 100%
+		&_field
+			width: auto
+		&_name
+			font-size: 16px
+		&_input
+			font-size: 16px
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.staff-page-item
+		&_container
+			width: 100%
+		&_field
+			width: auto
+		&_name
+			font-size: 14px
+		&_input
+			font-size: 14px
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.staff-page-item
+		&_container
+			width: 100%
+		&_field
+			width: auto
+		&_name
+			font-size: 16px
+		&_input
+			font-size: 16px

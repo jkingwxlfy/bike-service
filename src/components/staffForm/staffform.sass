@@ -1,0 +1,60 @@
+.staff-form
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 300px
+	h2
+		color: #fff
+		text-align: center
+	&_field
+		color: #fff
+		font-size: 20px
+		padding: 10px 0
+	&_item
+		width: 300px
+		margin: 5px 0
+	&_name
+		display: flex
+	&_checkbox
+		color: #fff
+		display: inline-block
+		padding-right: 15px
+		font-size: 20px
+		user-select: none
+		margin: 15px 0
+	&_error
+		padding: 10px
+		color: #f05b5b
+
+
+@media (min-width: 320px) and (max-width: 479px)
+	.staff-form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: auto
+		h2
+			font-size: 16px
+			color: #fff
+			text-align: center
+		&_field
+			color: #fff
+			font-size: 14px
+			padding: 10px 0
+		&_item
+			width: 200px
+			margin: 5px 0
+		&_name
+			display: flex
+		&_checkbox
+			color: #fff
+			display: inline-block
+			padding-right: 15px
+			font-size: 14px
+			user-select: none
+			margin: 15px 0
+		&_error
+			padding: 10px
+			color: #f05b5b
