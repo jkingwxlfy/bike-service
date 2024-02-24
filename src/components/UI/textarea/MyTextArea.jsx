@@ -1,9 +1,8 @@
-import {useState, useRef, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 
-import './mytextarea.sass';
+import "./mytextarea.sass";
 
-const MyTextArea = ({callback, placeholder, ...props}) => {
-
+const MyTextArea = ({ callback, placeholder, ...props }) => {
     const myRef = useRef(null);
     const [areaValue, setAreaValue] = useState("");
 
@@ -14,8 +13,10 @@ const MyTextArea = ({callback, placeholder, ...props}) => {
 
     const onEditArea = (event) => {
         setAreaValue(event.target.value);
-        if (callback) {callback(event)}
-    }
+        if (callback) {
+            callback(event);
+        }
+    };
 
     return (
         <textarea
@@ -24,9 +25,8 @@ const MyTextArea = ({callback, placeholder, ...props}) => {
             placeholder={placeholder ? placeholder : "Расскажите подробнее"}
             onChange={(event) => onEditArea(event)}
             ref={myRef}
-        >
-        </textarea>
-    )
-}
+        ></textarea>
+    );
+};
 
 export default MyTextArea;

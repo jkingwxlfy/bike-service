@@ -1,8 +1,16 @@
-import {NavLink} from "react-router-dom";
-import {MyButton} from "../UI";
+/* eslint-disable default-case */
+import { NavLink } from "react-router-dom";
 
-const ReportListItem = ({licenseNumber, ownerFullName, type, status, id, onDelete}) => {
+import { MyButton } from "../UI";
 
+const ReportListItem = ({
+    licenseNumber,
+    ownerFullName,
+    type,
+    status,
+    id,
+    onDelete,
+}) => {
     switch (status) {
         case "new":
             status = "Новый";
@@ -43,11 +51,16 @@ const ReportListItem = ({licenseNumber, ownerFullName, type, status, id, onDelet
                 <div>{status}</div>
             </div>
             <div className="report-list_item_buttons">
-                <NavLink to={`/report-list/${id}`} className="report-list_item_link"><MyButton>Подробнее</MyButton></NavLink>
+                <NavLink
+                    to={`/report-list/${id}`}
+                    className="report-list_item_link"
+                >
+                    <MyButton>Подробнее</MyButton>
+                </NavLink>
                 <MyButton onClick={() => onDelete(id)}>Удалить</MyButton>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ReportListItem;

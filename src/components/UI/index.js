@@ -7,4 +7,13 @@ import MyCheckBox from "./checkbox/MyCheckBox";
 import Spinner from "./spinner/Spinner";
 import ErrorMessage from "./error/errorMessage";
 
-export {MyInput, MyButton, MySelect, MyModal, MyTextArea, MyCheckBox, Spinner, ErrorMessage};
+export {
+    MyInput,
+    MyButton,
+    MySelect,
+    MyModal,
+    MyTextArea,
+    MyCheckBox,
+    Spinner,
+    ErrorMessage,
+};

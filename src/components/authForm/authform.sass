@@ -9,9 +9,9 @@
         flex-direction: column
         justify-content: center
         align-items: center
+        gap: 25px
     &_field
         width: 300px
-        padding: 15px 0
         font-size: 20px
     &_checkbox
         margin: 15px 0 0 10px
@@ -21,12 +21,14 @@
     &_error
         color: #f83c3c
         padding-bottom: 15px
-
+    &_buttons
+        display: flex
+        flex-direction: column
+        gap: 15px
 
 .form_error
     color: #f05b5b
     padding-top: 10px
-
 
 @media (min-width: 320px) and (max-width: 479px)
     .auth-form

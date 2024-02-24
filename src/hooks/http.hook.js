@@ -1,31 +1,27 @@
 export const useHttp = () => {
+	const request = async (url, method = "GET", body = null) => {
+		const token = localStorage.getItem("token");
+		const headers = {
+			"Content-Type": "application/json",
+		};
+		if (token) {
+			headers.Authorization = "Bearer " + token;
+		}
 
-    const request = async (
-        url,
-        method = 'GET',
-        body = null,
-        ) => {
+		try {
+			const response = await fetch(url, { method, body, headers });
 
-        const token = localStorage.getItem("token");
-        const headers = {
-            'Content-Type': 'application/json'
-        }
-        if (token) {headers.Authorization = 'Bearer ' + token}
+			const data = await response.json();
 
-        try {
-            const response = await fetch(url, {method, body, headers});
+			if (data.status === "ERR") {
+				throw new Error(`${data.message}`);
+			}
 
-            if (!response.ok) {
-                throw new Error(`Ошибка запроса ${url} Код ${response.status}`);
-            }
+			return data;
+		} catch (e) {
+			throw e;
+		}
+	};
 
-            const data = await response.json();
-
-            return data;
-        } catch(e) {
-            throw e;
-        }
-    };
-
-    return {request}
-}
+	return { request };
+};

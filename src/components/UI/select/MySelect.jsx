@@ -1,12 +1,11 @@
-import './myselect.sass';
+import "./myselect.sass";
 
-const MySelect = ({selectOptions, defaultValue, ...props}) => {
-
+const MySelect = ({ selectOptions, defaultValue, ...props }) => {
     return (
         <div className="my-select">
             <select {...props}>
                 <option hidden>{defaultValue}</option>
-                {selectOptions.map(option =>
+                {selectOptions.map((option) => (
                     <option
                         key={option.name}
                         value={option.value}
@@ -14,10 +13,10 @@ const MySelect = ({selectOptions, defaultValue, ...props}) => {
                     >
                         {option.name}
                     </option>
-                )}
+                ))}
             </select>
         </div>
-    )
-}
+    );
+};
 
 export default MySelect;
